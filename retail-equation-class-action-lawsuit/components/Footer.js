@@ -19,8 +19,16 @@ const Footer = () => {
                     <li>{ content.phone }</li>
                     <li>{ content.phoneTwo }</li>
                     <li>{ content.url }</li>
-                    <li>{ content.disclaimer }</li>
-                    <li>{ content.sitemap }</li>
+                    <li>
+                        <a href={ content.disclaimer }>
+                            Disclaimer
+                        </a>
+                    </li>
+                    <li>
+                        <a href={ content.sitemap }>
+                            Sitemap
+                        </a>
+                    </li>
                     <li>{ content.address }</li>
                 </ul>
             </Container>
