@@ -1,35 +1,25 @@
 import { Container } from '@material-ui/core';
 
-const content = {
-    copyright: 'Copyright &#169; 2021',
-    phone: '918.588.3400',
-    phoneTwo: '800.969.6570',
-    url: 'abingtonlaw.com',
-    disclaimer: 'https://abingtonlaw.com/disclaimer.html',
-    sitemap: 'https://abingtonlaw.com/sitemap.xml',
-    address: '320 South Boston Avenue, Suite 1130, Tulsa, Oklahoma 74103'
-}
-
 const Footer = () => {
     return (
-        <footer>
-            <Container maxWidth='xs'>
-                <ul className="footer-list">
-                    <li>{ content.copyright }</li>
-                    <li>{ content.phone }</li>
-                    <li>{ content.phoneTwo }</li>
-                    <li>{ content.url }</li>
+        <footer className='footer section'>
+            <Container maxWidth='sm'>
+                <ul className='footer-list'>
+                    <li>Copyright &#169; 2021 | </li>
+                    <li>918.588.3400 | </li>
+                    <li>800.969.6570 | </li>
+                    <li>abingtonlaw.com | </li>
                     <li>
-                        <a href={ content.disclaimer }>
+                        <a href='https://abingtonlaw.com/disclaimer.html' target='_blank' rel='noopener noreferrer'>
                             Disclaimer
                         </a>
                     </li>
                     <li>
-                        <a href={ content.sitemap }>
+                        <a href='https://abingtonlaw.com/sitemap.xml' target='_blank' rel='noopener noreferrer'>
                             Sitemap
                         </a>
                     </li>
-                    <li>{ content.address }</li>
+                    <li>320 South Boston Avenue, Suite 1130, Tulsa, Oklahoma 74103</li>
                 </ul>
             </Container>
         </footer>

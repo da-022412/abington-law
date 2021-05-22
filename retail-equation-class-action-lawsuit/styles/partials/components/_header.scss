@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--primary-color);
+    padding: toRem(16) 0;
+}
+
+.logo {
+    font-size: toRem(20);
+    font-weight: 400;
+    white-space: nowrap;
+}
