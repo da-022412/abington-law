@@ -1,0 +1,16 @@
+.form {
+    margin-bottom: toRem(32);
+}
+
+.form .MuiButton-contained {
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    &:hover {
+        background-color: var(--hover);
+    }
+}
+
+.MuiFormControl-root {
+    width: 100%;
+}

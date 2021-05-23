@@ -1,25 +1,105 @@
-import { Container } from '@material-ui/core'
+import { Button, Grid, TextField } from '@material-ui/core';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 
-const content = {
-    title: 'Has The Retail Equation prevented you from making a return or exchange?',
-    subTitle: 'If so, please submit the following information to participate in the class action:',
-    formFooter: 'An attorney client relationship is not formed by submitting information through this web site.'
+const Form = () => {
+    return (
+        <div className='form-wrap'>
+            <form className='form' action='https://submit.jotform.com/submit/211414202682040/' method='post' name='form_211414202682040' id='211414202682040' accept-charset='utf-8'>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} md={6}>
+                        <TextField id='input_4' name='q4_name' label='Name' variant='outlined' />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <TextField id='input_6' name='q6_email' label='Email' variant='outlined' />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <TextField id='input_7_full' name='q7_phoneNumber[full]' label='Telephone' variant='outlined' />
+                    </Grid>
+                    <Grid item xs={12} md={3}>
+                    <FormControl variant='outlined'>
+                        <InputLabel id="demo-simple-select-label">State</InputLabel>
+                        <Select
+                            id='input_8'
+                            name='q8_state'
+                        >
+                            <MenuItem value="U.S. Armed Forces AA"> U.S. Armed Forces AA </MenuItem>
+                            <MenuItem value="U.S. Armed Forces AP"> U.S. Armed Forces AP </MenuItem>
+                            <MenuItem value="Alabama"> Alabama </MenuItem>
+                            <MenuItem value="Alaska"> Alaska </MenuItem>
+                            <MenuItem value="American Samoa"> American Samoa </MenuItem>
+                            <MenuItem value="Arizona"> Arizona </MenuItem>
+                            <MenuItem value="Arkansas"> Arkansas </MenuItem>
+                            <MenuItem value="California"> California </MenuItem>
+                            <MenuItem value="Colorado"> Colorado </MenuItem>
+                            <MenuItem value="Connecticut"> Connecticut </MenuItem>
+                            <MenuItem value="Delaware"> Delaware </MenuItem>
+                            <MenuItem value="District of Columbia"> District of Columbia </MenuItem>
+                            <MenuItem value="Federated States of Micronesia"> Federated States of Micronesia </MenuItem>
+                            <MenuItem value="Florida"> Florida </MenuItem>
+                            <MenuItem value="Georgia"> Georgia </MenuItem>
+                            <MenuItem value="Guam"> Guam </MenuItem>
+                            <MenuItem value="Hawaii"> Hawaii </MenuItem>
+                            <MenuItem value="Idaho"> Idaho </MenuItem>
+                            <MenuItem value="Illinois"> Illinois </MenuItem>
+                            <MenuItem value="Indiana"> Indiana </MenuItem>
+                            <MenuItem value="Iowa"> Iowa </MenuItem>
+                            <MenuItem value="Kansas"> Kansas </MenuItem>
+                            <MenuItem value="Kentucky"> Kentucky </MenuItem>
+                            <MenuItem value="Louisiana"> Louisiana </MenuItem>
+                            <MenuItem value="Maine"> Maine </MenuItem>
+                            <MenuItem value="Marshall Islands"> Marshall Islands </MenuItem>
+                            <MenuItem value="Maryland"> Maryland </MenuItem>
+                            <MenuItem value="Massachusetts"> Massachusetts </MenuItem>
+                            <MenuItem value="Michigan"> Michigan </MenuItem>
+                            <MenuItem value="Minnesota"> Minnesota </MenuItem>
+                            <MenuItem value="Mississippi"> Mississippi </MenuItem>
+                            <MenuItem value="Missouri"> Missouri </MenuItem>
+                            <MenuItem value="Montana"> Montana </MenuItem>
+                            <MenuItem value="Nebraska"> Nebraska </MenuItem>
+                            <MenuItem value="Nevada"> Nevada </MenuItem>
+                            <MenuItem value="New Hampshire"> New Hampshire </MenuItem>
+                            <MenuItem value="New Jersey"> New Jersey </MenuItem>
+                            <MenuItem value="New Mexico"> New Mexico </MenuItem>
+                            <MenuItem value="New York"> New York </MenuItem>
+                            <MenuItem value="North Carolina"> North Carolina </MenuItem>
+                            <MenuItem value="North Dakota"> North Dakota </MenuItem>
+                            <MenuItem value="Northern Mariana Islands"> Northern Mariana Islands </MenuItem>
+                            <MenuItem value="Ohio"> Ohio </MenuItem>
+                            <MenuItem value="Oklahoma"> Oklahoma </MenuItem>
+                            <MenuItem value="Oregon"> Oregon </MenuItem>
+                            <MenuItem value="Pennsylvania"> Pennsylvania </MenuItem>
+                            <MenuItem value="Puerto Rico"> Puerto Rico </MenuItem>
+                            <MenuItem value="Rhode Island"> Rhode Island </MenuItem>
+                            <MenuItem value="South Carolina"> South Carolina </MenuItem>
+                            <MenuItem value="South Dakota"> South Dakota </MenuItem>
+                            <MenuItem value="Tennessee"> Tennessee </MenuItem>
+                            <MenuItem value="Texas"> Texas </MenuItem>
+                            <MenuItem value="U.S. Virgin Islands"> U.S. Virgin Islands </MenuItem>
+                            <MenuItem value="Utah"> Utah </MenuItem>
+                            <MenuItem value="Vermont"> Vermont </MenuItem>
+                            <MenuItem value="Virginia"> Virginia </MenuItem>
+                            <MenuItem value="Washington"> Washington </MenuItem>
+                            <MenuItem value="West Virginia"> West Virginia </MenuItem>
+                            <MenuItem value="Wisconsin"> Wisconsin </MenuItem>
+                            <MenuItem value="Wyoming"> Wyoming </MenuItem>
+                        </Select>
+                    </FormControl>
+                    </Grid>
+                    <Grid item xs={12} md={3}>
+                        <TextField label='Zip Code' variant='outlined' />
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button variant='contained'>
+                            Submit
+                        </Button>
+                    </Grid>
+                </Grid>
+            </form>
+        </div>
+    );
 }
 
-export default function Form() {
-  return (
-    <section className='section'>
-        <Container className='text-center' maxWidth='sm'>
-            <h1 className='heading-1'>
-                { content.title }
-            </h1>
-            <h2 className='heading-3 text-muted'>
-                { content.subTitle }
-            </h2>
-            <small className='form-footer small text-muted'>
-                <em>{ content.formFooter }</em>
-            </small>
-        </Container>
-    </section>
-  )
-}
+export default Form;

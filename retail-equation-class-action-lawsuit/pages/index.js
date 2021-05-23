@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Form from '../components/Form'
+import FormSection from '../components/FormSection'
 import Content from '../components/Content'
 
 export default function Home() {
@@ -20,8 +20,10 @@ export default function Home() {
         <meta name="theme-color" content="#007bff" />
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
+
+        <script type="text/javascript" src="./scripts/jotform.js"></script>
       </Head>
-      <Form />
+      <FormSection />
       <Content />
     </>
   )
