@@ -10,20 +10,20 @@ const Form = () => {
             <form className='form' action='https://submit.jotform.com/submit/211414202682040/' method='post' name='form_211414202682040' id='211414202682040' accept-charset='utf-8'>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
-                        <TextField id='input_4' name='q4_name' label='Name' variant='outlined' />
+                        <TextField id='input_4' name='q4_name' label='Name' variant='filled' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <TextField id='input_6' name='q6_email' label='Email' variant='outlined' />
+                        <TextField id='input_6' name='q6_email' label='Email' variant='filled' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <TextField id='input_7_full' name='q7_phoneNumber[full]' label='Telephone' variant='outlined' />
+                        <TextField id='input_7_full' name='q7_phoneNumber[full]' label='Telephone' variant='filled' />
                     </Grid>
                     <Grid item xs={12} md={3}>
-                        <FormControl variant='outlined'>
-                            <InputLabel>State</InputLabel>
+                        <FormControl variant='filled'>
+                            <InputLabel id='state-select'>State</InputLabel>
                             <Select
+                                labelId='state-select'
                                 id='input_8'
-                                label='State'
                                 name='q8_state'
                             >
                                 <MenuItem value={'U.S. Armed Forces AA'}> U.S. Armed Forces AA </MenuItem>
@@ -90,7 +90,7 @@ const Form = () => {
                         </FormControl>
                     </Grid>
                     <Grid item xs={12} md={3}>
-                        <TextField id='input_9' name='q9_zipCode' label='Zip Code' variant='outlined' />
+                        <TextField id='input_9' name='q9_zipCode' label='Zip Code' variant='filled' />
                     </Grid>
                     <Grid item xs={12}>
                         <Button id='input_2' type='submit' variant='contained'>
