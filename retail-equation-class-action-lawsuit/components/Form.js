@@ -23,6 +23,7 @@ const Form = () => {
                             <InputLabel>State</InputLabel>
                             <Select
                                 id='input_8'
+                                label='State'
                                 name='q8_state'
                             >
                                 <MenuItem value={'U.S. Armed Forces AA'}> U.S. Armed Forces AA </MenuItem>
