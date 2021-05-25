@@ -1,4 +1,4 @@
-import { Container, Grid, Hidden } from '@material-ui/core';
+import { Container, Grid } from '@material-ui/core';
 
 
 const content = {
@@ -10,7 +10,7 @@ const Header = () => {
         <header className='header is-white'>
             <Container maxWidth='lg'>
                 <Grid container alignItems='center' justify='space-between'>
-                    <Grid item xs={4}>
+                    <Grid item xs={6}>
                         <div className='logo-wrap'>
                             <h3 className='logo'>
                                 { content.logo }

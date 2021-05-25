@@ -26,6 +26,7 @@ const Form = () => {
                                 id='input_8'
                                 name='q8_state'
                             >
+                                <MenuItem value={''}>None</MenuItem>
                                 <MenuItem value={'U.S. Armed Forces AA'}> U.S. Armed Forces AA </MenuItem>
                                 <MenuItem value={'U.S. Armed Forces AP'}> U.S. Armed Forces AP </MenuItem>
                                 <MenuItem value={'Alabama'}> Alabama </MenuItem>

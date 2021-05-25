@@ -19,8 +19,6 @@ export default function Home() {
 
         <meta name="theme-color" content="#007bff" />
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
-
         <script type="text/javascript" src="./scripts/jotform.js"></script>
       </Head>
       <FormSection />

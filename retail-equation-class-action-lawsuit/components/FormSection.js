@@ -12,7 +12,7 @@ const FormSection = () => {
   return (
     <section className='intro-section section'>
         <Container className='text-center' maxWidth='sm'>
-            <div ClassName='intro-section-wrap'>
+            <div className='intro-section-wrap'>
                 <h1 className='heading-1'>
                     { content.title }
                 </h1>
